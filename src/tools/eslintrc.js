@@ -28,7 +28,6 @@ module.exports = {
       },
     ],
     '@smarttools/rxjs/no-nested-subscribe': ['warn'],
-    //FIXME: HIGH: Disabled until we can use eslint 7
     '@smarttools/rxjs/no-implicit-any-catch': ['off'],
     '@smarttools/rxjs/no-unsafe-takeuntil': [
       'warn',
