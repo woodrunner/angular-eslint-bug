@@ -1,20 +1,24 @@
 diff --git a/node_modules/@smarttools/eslint-plugin-rxjs/index.cjs b/node_modules/@smarttools/eslint-plugin-rxjs/index.cjs
-index e6c238d..074ed0d 100644
+index e6c238d..7c4178d 100644
 --- a/node_modules/@smarttools/eslint-plugin-rxjs/index.cjs
 +++ b/node_modules/@smarttools/eslint-plugin-rxjs/index.cjs
-@@ -39,7 +39,6 @@ var require_recommended = __commonJS({
+@@ -38,8 +38,6 @@ var require_recommended = __commonJS({
+   "packages/eslint-plugin-rxjs/src/lib/configs/recommended.ts"(exports2, module2) {
      "use strict";
      module2.exports = {
-       plugins: ["@smarttools/rxjs"],
+-      plugins: ["@smarttools/rxjs"],
 -      name: "@smarttools/rxjs/recommended-legacy",
        rules: {
          "@smarttools/rxjs/no-async-subscribe": "error",
          "@smarttools/rxjs/no-create": "error",
-@@ -345026,7 +345025,6 @@ var plugin = {
+@@ -345026,10 +345024,6 @@ var plugin = {
  if (plugin.configs) {
    Object.assign(plugin.configs, {
      recommended: {
 -      name: "@smarttools/rxjs/recommended",
-       plugins: {
-         "@smarttools/rxjs": plugin
-       },
+-      plugins: {
+-        "@smarttools/rxjs": plugin
+-      },
+       rules: {
+         ...import_recommended.default.rules
+       }
