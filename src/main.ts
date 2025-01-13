@@ -1,6 +1,7 @@
 import 'zone.js';
 import {Component} from '@angular/core';
 import {bootstrapApplication} from '@angular/platform-browser';
+import { of, map } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,15 @@ import {bootstrapApplication} from '@angular/platform-browser';
 })
 export class App {
   name = 'Angular';
+
+  constructor() {
+    of(1, 2, 3)
+      .pipe(map(x => x * 2))
+      .subscribe({
+        next: value => console.log('Mapped value:', value),
+        complete: () => console.log('RxJS Completed'),
+      });
+  }
 }
 
 bootstrapApplication(App);

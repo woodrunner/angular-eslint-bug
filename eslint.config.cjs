@@ -28,7 +28,7 @@ module.exports = [
       languageOptions: {
         parser: require('@typescript-eslint/parser'),
         parserOptions: {
-          project: join(__dirname, './tsconfig.base.json'),
+          project: join(__dirname, './tsconfig.json'),
         },
       },
       rules: {
